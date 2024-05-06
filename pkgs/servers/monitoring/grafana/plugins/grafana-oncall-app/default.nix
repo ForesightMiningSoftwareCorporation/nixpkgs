@@ -2,12 +2,12 @@
 
 grafanaPlugin rec {
   pname = "grafana-oncall-app";
-  version = "1.3.106";
+  version = "1.4.4";
   zipHash = {
-    x86_64-linux = "sha256-8TL8HqiYCUxY2tCItpavYb77rGIpcJBWexwykFNWONg=";
-    aarch64-linux = "sha256-4rCj+NaKPZbuVohlKmSf1M6m5ng9HZMrwzBCgLPdiok=";
-    x86_64-darwin = "sha256-bpey6EwwAqXgxjvjJ6ou4rimidHCpUr+Z89YpAZK7z8=";
-    aarch64-darwin = "sha256-u/U2lu4szf9JFt/zfhGmWKF2OUqpJDNaSI69EDdi1+w=";
+    x86_64-linux = "sha256-HkLUET0+mIWdR9FA9Rw45CyYy0bPfj9se+jPhGVMeu4=";
+    aarch64-linux = "sha256-68UIB4aclh7wLNsQShddxMlokbyYYe49kXgFxc5nQNk=";
+    x86_64-darwin = "sha256-68UIB4aclh7wLNsQShddxMlokbyYYe49kXgFxc5nQNk=";
+    aarch64-darwin = "sha256-68UIB4aclh7wLNsQShddxMlokbyYYe49kXgFxc5nQNk=";
   };
   meta = with lib; {
     description =
@@ -17,3 +17,4 @@ grafanaPlugin rec {
     platforms = attrNames zipHash;
   };
 }
+
